@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Опыт работы</title>
+</head>
+<body>
+    <h1>Опыт работы</h1>
+    <ul>
+        <?php foreach ($experienceData as $experience): ?>
+            <li>
+                <strong><?= $experience['position']; ?></strong> в компании <?= $experience['company']; ?><br>
+                <?= $experience['start_date']; ?> - <?= $experience['end_date']; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>
